@@ -1,0 +1,9 @@
+## Ignore all what's not a root project ##
+/logs
+**.zip
+.**
+todo.txt
+
+## Don't ignore these files/dir ##
+!.gitignore
+
