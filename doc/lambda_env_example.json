@@ -1,0 +1,19 @@
+
+{
+  "Variables": {
+    "MONGO_URI": "your_mongo_uri_with_credentials",
+    "MONGO_DB": "your_database_name",
+
+    "WORK_DIR": "/tmp/audio_converter",
+
+    "FFMPEG_BIN_PATH": "/opt/bin/ffmpeg",
+    "FFPROBE_BIN_PATH": "/opt/bin/ffprobe",
+
+    "AUDIO_CONTENT_TYPE": "audio/m4a",
+    "AUDIO_CODEC": "aac",
+    "AUDIO_FORMAT": "m4a",
+
+    "CONTENT_SUFFIX": ".m4a",
+    "THUMBNAIL_SUFFIX": "thumbnail"
+  }
+}

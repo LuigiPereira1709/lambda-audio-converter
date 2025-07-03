@@ -1,0 +1,31 @@
+`timestamp,message
+1751235598686,"INIT_START Runtime Version: provided:al2023.v98	Runtime Version ARN: lambda-arn 
+"
+1751235598769,"START RequestId: <requestId> Version: $LATEST
+"
+1751235598978,"2025/06/29 22:19:58 Parsed event: {Bucket:<bucket name> ParentDirKey:<document id> EventFileKey:<document id>/metadata.json OthersFilesKey:map[content:<document id>/content thumbnail:<document id>/thumbnail]}
+"
+1751235598978,"2025/06/29 22:19:58 WORK_DIR doesn't exist, trying to create: /tmp/audio_converter
+"
+1751235599085,"2025/06/29 22:19:59 Parsed metadata: map[album:Album artist:Artist collection_name:music genre:ROCK id:<document_id> title:Music type:music year:2003]
+"
+1751235599710,"2025/06/29 22:19:59 Duration of the audio file: 199.079184 seconds
+"
+1751235599710,"2025/06/29 22:19:59 FFmpeg command: [/opt/bin/ffmpeg -y -progress pipe:1 -nostats -i /tmp/audio_converter/content -i /tmp/audio_converter/thumbnail -vf scale=trunc(iw/2)*2:trunc(ih/2)*2 -map 0:a -map 1:v -c:a aac -metadata:s:v title=Album cover -metadata:s:v comment=Cover (front) -metadata title=Music -metadata year=2003 -metadata artist=Artist -metadata album=Album -metadata genre=ROCK -movflags faststart /tmp/audio_converter/processed_file.m4a]
+"
+1751235619341,"2025/06/29 22:20:19 INFO File processed successfully details=""Progress: 98.35%. Current Time: 00:03:15. Duration: 199.08s. Finished: true. Elapsed Time: 00:00:19. Current Line: progress=end""
+"
+1751235619479,"2025/06/29 22:20:19 Content uploaded successfully to S3: <bucket_name>/<document_id>/Music.m4a
+"
+1751235619606,"2025/06/29 22:20:19 INFO Connected to MongoDB successfully dbName=<database_name>
+"
+1751235619610,"2025/06/29 22:20:19 Document updated successfully: {ID:<document_id> CollectionName:music ContentKey:<document_id>/Music.m4a Duration:199.079184 Status:0}
+"
+1751235619612,"2025/06/29 22:20:19 Temporary files cleaned up successfully
+"
+1751235619612,"2025/06/29 22:20:19 INFO Lambda handler completed successfully
+"
+1751235619613,"END RequestId: <requestId> 
+"
+1751235619613,"REPORT RequestId: <requestId>	Duration: 20844.05 ms	Billed Duration: 20925 ms	Memory Size: 640 MB	Max Memory Used: 113 MB	Init Duration: 80.95 ms	
+"

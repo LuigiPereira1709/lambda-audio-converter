@@ -1,0 +1,2 @@
+### Local environment examples ###
+LAMBDA_ROLE=your_role_arn (arn:aws:iam::**:role/**)
